@@ -1,3 +1,4 @@
+using Tally.Bus.Core;
 using Tally.Bus.Infrastructure;
 
 namespace Tally.Bus

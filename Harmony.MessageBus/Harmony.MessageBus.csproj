@@ -44,6 +44,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Reactive">
+      <HintPath>..\packages\Rx-Main.1.0.11226\lib\Net4\System.Reactive.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,27 +54,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtensibleHarmonyEvent.cs" />
+    <Compile Include="HarmonyEvent.cs" />
+    <Compile Include="Core\IEventPublisher.cs" />
+    <Compile Include="Core\IEventSubscriber.cs" />
+    <Compile Include="Core\IMessageBus.cs" />
+    <Compile Include="Implementations\SingleProcessMessageBus.cs" />
     <Compile Include="Infrastructure\BootStrapper.cs" />
-    <Compile Include="Contracts\ICommandHandler.cs" />
-    <Compile Include="Core\IMessageBrokerage.cs" />
     <Compile Include="Infrastructure\InternalsAreVisible.cs" />
-    <Compile Include="MemoryMessageBus.cs" />
-    <Compile Include="Core\MessageBroker.cs" />
     <Compile Include="MessageBus.cs" />
-    <Compile Include="Contracts\ICommandMessage.cs" />
-    <Compile Include="Contracts\IEventMessage.cs" />
-    <Compile Include="Contracts\IMessage.cs" />
-    <Compile Include="Contracts\IMessageHandler.cs" />
-    <Compile Include="Core\MessageBrokerage.cs" />
-    <Compile Include="Core\IMessageBroker.cs" />
-    <Compile Include="IMessageBus.cs" />
-    <Compile Include="MessageBusConfigurationOptions.cs" />
+    <Compile Include="Core\IEventMessage.cs" />
+    <Compile Include="FluentConfig\MessageBusConfigurationOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Infrastructure\Container.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

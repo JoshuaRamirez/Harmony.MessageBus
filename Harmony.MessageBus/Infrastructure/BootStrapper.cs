@@ -1,5 +1,6 @@
 ﻿using Ninject;
 using Tally.Bus.Core;
+using Tally.Bus.Implementations;
 
 namespace Tally.Bus.Infrastructure
 {
@@ -8,10 +9,8 @@ namespace Tally.Bus.Infrastructure
 
         public static void Start()
         {
-            IKernel kernel = new StandardKernel();
-            kernel.Bind<IMessageBroker>().To<MessageBroker>();
-            kernel.Bind<IMessageBrokerage>().To<MessageBrokerage>();
-            kernel.Bind<IMessageBus>().To<MemoryMessageBus>().InSingletonScope();
+            var kernel = new StandardKernel();
+            kernel.Bind<IMessageBus>().To<SingleProcessMessageBus>().InSingletonScope();
             Container.Kernel = kernel;
         }
 

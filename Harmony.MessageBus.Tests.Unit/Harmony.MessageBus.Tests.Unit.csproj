@@ -43,13 +43,7 @@
       <HintPath>..\packages\NSubstitute.1.3.0.0\lib\NET40\NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.mocks">
-      <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll</HintPath>
-    </Reference>
-    <Reference Include="pnunit.framework">
-      <HintPath>..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -60,13 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fakes\CatCommand.cs" />
-    <Compile Include="Fakes\FooHandler.cs" />
     <Compile Include="Fakes\FooHappens.cs" />
-    <Compile Include="Fakes\MammalCommand.cs" />
+    <Compile Include="Fakes\FooPublisher.cs" />
     <Compile Include="InternalBusTests.cs" />
-    <Compile Include="MessageBrokerageTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleProcessMessageBusTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">

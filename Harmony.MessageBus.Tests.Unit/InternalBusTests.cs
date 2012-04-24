@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using NSubstitute;
 using NUnit.Framework;
-using Tally.Bus.Contracts;
+using Tally.Bus.Core;
 using Tally.Bus.Tests.Unit.Fakes;
 
 
@@ -15,18 +15,18 @@ namespace Tally.Bus.Tests.Unit
     {
 
         [Test]
-        public void Send_UsingBaseCommandClass_HandlerInvoked()
+        public void EventHandlerIsCalledWhenItsSubscrivedAndTheEventIsPublished()
         {
-            //Arrange
-            var handler = Substitute.For<ICommandHandler<CatCommand>>();
-            MessageBus.AddHandler(handler);
+            var messageId = Guid.NewGuid();
+            var message = new FooHappens(messageId);
+            var subscriber = Substitute.For<IEventSubscriber<FooHappens>>();
+            var publisher = new FooPublisher();
+            MessageBus.RegisterPublisher(publisher);
+            MessageBus.RegisterSubscriber(subscriber);
 
-            //Act
-            var message = new CatCommand();
-            message.Send();
+            publisher.Publish(message);
 
-            //Assert
-            handler.Received(1).Handle(message);
+            subscriber.Received(1).Handle(message);
         }
     }
 }

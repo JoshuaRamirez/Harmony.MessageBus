@@ -1,9 +1,8 @@
 ﻿using System;
 
-
-namespace Tally.Bus.Contracts
+namespace Tally.Bus.Core
 {
-    public interface IMessage
+    public interface IEventMessage
     {
         Guid MessageId { get; }
     }

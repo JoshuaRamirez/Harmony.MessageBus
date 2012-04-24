@@ -1,10 +1,10 @@
 ﻿using System;
-using Tally.Bus.Contracts;
+using Tally.Bus.Core;
 
 
 namespace Tally.Bus.Tests.Unit.Fakes
 {
-    public class FooHappens : IMessage
+    public class FooHappens : IEventMessage
     {
         private readonly Guid _messageId;
         public FooHappens(Guid messageId)
@@ -16,16 +16,5 @@ namespace Tally.Bus.Tests.Unit.Fakes
         {
             get { return _messageId; }
         }
-    }
-    
-    public class FooBarHappens : FooHappens
-    {
-        public FooBarHappens(Guid messageId) : base(messageId){}
-
-        public string Bar()
-        {
-            return DateTime.Now.ToString();
-        }
-
     }
 }
