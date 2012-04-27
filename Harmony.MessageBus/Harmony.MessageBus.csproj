@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventMessage.cs" />
     <Compile Include="ExtensibleHarmonyEvent.cs" />
     <Compile Include="HarmonyEvent.cs" />
     <Compile Include="Core\IEventPublisher.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="FluentConfig\MessageBusConfigurationOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Infrastructure\Container.cs" />
+    <Compile Include="PublisherEndPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
