@@ -1,8 +1,9 @@
-﻿using Ninject;
-using Tally.Bus.Core;
-using Tally.Bus.Infrastructure;
+﻿using Harmony.MessageBus.Core;
+using Harmony.MessageBus.FluentConfig;
+using Harmony.MessageBus.Infrastructure;
+using Ninject;
 
-namespace Tally.Bus
+namespace Harmony.MessageBus
 {
     public static class MessageBus
     {

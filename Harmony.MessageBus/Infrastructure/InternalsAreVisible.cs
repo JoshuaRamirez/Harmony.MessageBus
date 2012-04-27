@@ -1,2 +1,2 @@
 ﻿using System.Runtime.CompilerServices;
-[assembly: InternalsVisibleTo("Tally.Bus.Tests.Unit")]
+[assembly: InternalsVisibleTo("Harmony.MessageBus.Tests.Unit")]

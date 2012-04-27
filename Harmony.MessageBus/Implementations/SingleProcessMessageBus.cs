@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reactive.Linq;
-using Tally.Bus.Core;
+using Harmony.MessageBus.Core;
 
-namespace Tally.Bus.Implementations
+namespace Harmony.MessageBus.Implementations
 {
     internal sealed class SingleProcessMessageBus : IMessageBus
     {

@@ -1,6 +1,6 @@
-using Tally.Bus.Core;
+using Harmony.MessageBus.Core;
 
-namespace Tally.Bus
+namespace Harmony.MessageBus
 {
     public delegate void HarmonyEvent<in TEventMessage>(TEventMessage eventMessage) where TEventMessage : IEventMessage;
 }

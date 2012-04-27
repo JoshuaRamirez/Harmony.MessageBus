@@ -1,7 +1,7 @@
 ﻿using System;
-using Tally.Bus.Core;
+using Harmony.MessageBus.Core;
 
-namespace Tally.Bus
+namespace Harmony.MessageBus
 {
     public abstract class EventMessage : IEventMessage
     {

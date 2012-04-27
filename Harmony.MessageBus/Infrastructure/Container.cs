@@ -1,6 +1,6 @@
 ﻿using Ninject;
 
-namespace Tally.Bus.Infrastructure
+namespace Harmony.MessageBus.Infrastructure
 {
     internal static class Container
     {

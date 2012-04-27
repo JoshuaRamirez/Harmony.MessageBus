@@ -1,6 +1,6 @@
-﻿using Tally.Bus.Core;
+﻿using Harmony.MessageBus.Core;
 
-namespace Tally.Bus
+namespace Harmony.MessageBus
 {
     public class PublisherEndpoint<TEventMessage> : IEventPublisher<TEventMessage> where TEventMessage : IEventMessage
     {

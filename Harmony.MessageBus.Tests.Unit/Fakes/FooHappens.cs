@@ -1,8 +1,7 @@
 ﻿using System;
-using Tally.Bus.Core;
+using Harmony.MessageBus.Core;
 
-
-namespace Tally.Bus.Tests.Unit.Fakes
+namespace Harmony.MessageBus.Tests.Unit.Fakes
 {
     public class FooHappens : IEventMessage
     {

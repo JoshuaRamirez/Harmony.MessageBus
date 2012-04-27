@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Tally.Bus.Core;
+using Harmony.MessageBus.Core;
 
-namespace Tally.Bus
+namespace Harmony.MessageBus
 {
     internal class ExtensibleHarmonyEvent<TEventMessage> : IEventPublisher<TEventMessage> where TEventMessage : IEventMessage
     {

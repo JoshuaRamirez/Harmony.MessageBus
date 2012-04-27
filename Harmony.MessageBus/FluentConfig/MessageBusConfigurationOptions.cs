@@ -1,7 +1,7 @@
-using Tally.Bus.Core;
-using Tally.Bus.Infrastructure;
+using Harmony.MessageBus.Core;
+using Harmony.MessageBus.Infrastructure;
 
-namespace Tally.Bus
+namespace Harmony.MessageBus.FluentConfig
 {
     public class MessageBusConfigurationOptions
     {

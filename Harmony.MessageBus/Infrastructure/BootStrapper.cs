@@ -1,8 +1,8 @@
-﻿using Ninject;
-using Tally.Bus.Core;
-using Tally.Bus.Implementations;
+﻿using Harmony.MessageBus.Core;
+using Harmony.MessageBus.Implementations;
+using Ninject;
 
-namespace Tally.Bus.Infrastructure
+namespace Harmony.MessageBus.Infrastructure
 {
     internal static class BootStrapper
     {

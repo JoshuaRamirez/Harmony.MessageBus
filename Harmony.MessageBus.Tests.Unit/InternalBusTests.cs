@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Harmony.MessageBus.Core;
+using Harmony.MessageBus.Tests.Unit.Fakes;
 using NSubstitute;
 using NUnit.Framework;
-using Tally.Bus.Core;
-using Tally.Bus.Tests.Unit.Fakes;
 
-
-namespace Tally.Bus.Tests.Unit
+namespace Harmony.MessageBus.Tests.Unit
 {
     [TestFixture]
     class InternalBusTests

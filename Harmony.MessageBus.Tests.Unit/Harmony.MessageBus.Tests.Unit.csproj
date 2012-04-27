@@ -8,8 +8,8 @@
     <ProjectGuid>{A3EA4DCB-EE20-4833-956C-F92883DE1B73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tally.Bus.Tests.Unit</RootNamespace>
-    <AssemblyName>Tally.Bus.Tests.Unit</AssemblyName>
+    <RootNamespace>Harmony.MessageBus.Tests.Unit</RootNamespace>
+    <AssemblyName>Harmony.MessageBus.Tests.Unit</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

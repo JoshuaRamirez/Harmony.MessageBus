@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tally.Bus.Core
+namespace Harmony.MessageBus.Core
 {
     public interface IEventMessage
     {

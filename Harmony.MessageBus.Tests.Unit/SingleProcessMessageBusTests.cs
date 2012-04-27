@@ -1,11 +1,11 @@
 ﻿using System;
+using Harmony.MessageBus.Core;
+using Harmony.MessageBus.Implementations;
+using Harmony.MessageBus.Tests.Unit.Fakes;
 using NSubstitute;
 using NUnit.Framework;
-using Tally.Bus.Core;
-using Tally.Bus.Implementations;
-using Tally.Bus.Tests.Unit.Fakes;
 
-namespace Tally.Bus.Tests.Unit
+namespace Harmony.MessageBus.Tests.Unit
 {
     [TestFixture]
     public class SingleProcessMessageBusTests

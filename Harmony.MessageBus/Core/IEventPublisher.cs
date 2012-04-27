@@ -1,4 +1,4 @@
-namespace Tally.Bus.Core
+namespace Harmony.MessageBus.Core
 {
     public interface IEventPublisher<out TEventMessage> where TEventMessage : IEventMessage
     {
