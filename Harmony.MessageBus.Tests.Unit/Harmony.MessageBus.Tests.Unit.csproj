@@ -68,7 +68,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Harmony.MessageBus\Harmony.MessageBus.csproj">
       <Project>{1E892869-FD74-43BA-B64F-786C5893761C}</Project>
-      <Name>Tally.Bus</Name>
+      <Name>Harmony.MessageBus</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
